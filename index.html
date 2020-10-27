@@ -6,7 +6,12 @@
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">    <title>超低配微博</title>
    
 </head>
+
 <style>
+    html{
+     width:100%;
+    overflow-x:hidden;
+}
 
    
 
@@ -14,9 +19,12 @@
         border-style: solid;
     border-color: rgb(224, 223, 223);
     border-width: 1px;
-    margin-right:auto;
-	margin-left:auto;
-    margin-top:auto;
+ ;
+   
+    }
+    .box {
+        overflow-x: auto;
+        background-color: #fff;
     }
   
   ul {
@@ -27,21 +35,46 @@
     background-color:	#FFFAFA;
 }
 
-li {
-    float: left;
-}
 
-li a {
+ul::-webkit-scrollbar {
+        display: none;
+    }
+
+   
+    ul {
+        scrollbar-width: none;
+        
+        -ms-overflow-style: none;
+    }
+
+    ul {
+        overflow-x: scroll;
+        white-space: nowrap;
+       
+        width: 100%;
+        
+    }
+
+    li {
+        display: inline-block;
+        width: 60px;
+        height: 30px;
+        text-align: center;
+        font-size: 15px;
+        line-height: 15px;
+        color:  rgb(182, 181, 181);
+    
+       
+      
+    }
+    li a {
     display: block;
-    color: grey;
+    color: rgb(182, 181, 181);
     text-align: center;
-    padding: 14px 14px;
+    padding: 10px 10px;
     text-decoration: none;
 }
 
-li a:hover {
-    background-color: white;
-}
  .img{
          width: 50px;
          height:50px;
@@ -58,7 +91,7 @@ li a:hover {
  .time{
     
      position:absolute;
-     top: 125px;
+     top: 105px;
      left:61px;
      font-size: 10px;
      color:rgb(139, 136, 136);
@@ -92,14 +125,14 @@ li a:hover {
 .time2{
     
     position:absolute;
-    top: 425px;
+    top: 400px;
     left: 60px;
     font-size: 10px;
     color:rgb(139, 136, 136);
     font-size: 10px;
- 
+    
 </style>
-<body style="padding:0; margin:0;"><div class="first">    
+<body style="padding:0%; margin:0%;width:100%"><div class="first">    
     <div style="display:inline-block;position: relative">
     <img style="position:relative;left:0px;top:10px" src="https://raw.githubusercontent.com/litterboyme/test2/main/%E5%BE%AE%E5%8D%9A.ico">
         <input type="text" style="width: 240px;height: 30px;margin:0;padding:0; border-radius: 40px 40px 40px 40px;border:1px solid #ccc;" placeholder="🔍特朗普同志身份暴露">
@@ -108,12 +141,21 @@ li a:hover {
     
     </div>
     
-    <div><ul>
+    <div class="box"><ul>
         <li><a href="#关注">关注</a></li>
         <li><a href="#热门">热门</a></li>
         <li><a href="#榜单">榜单</a></li>
         <li><a href="#新鲜事">新鲜事</a></li>
-        <li><a href="#热点">热点</a></li>  
+        <li><a href="#同城">同城</a></li>  
+        <li><a href="#热点">热点</a></li> 
+          <li><a href="#科技">科技</a></li> 
+          <li><a href="#明星">明星</a></li>
+             <li><a href="#电影">电影</a></li>
+                <li><a href="#音乐">音乐</a></li>
+                   <li><a href="#情感">情感</a></li>
+                      <li><a href="#时尚">时尚</a></li>
+                         <li><a href="#美妆">美妆</a></li>
+                              
     </ul></div>
    
     
